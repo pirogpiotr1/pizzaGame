@@ -2,19 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { PizzaDoughComponent } from './pizza-dough/pizza-dough.component';
+import { PizzaMainComponent } from './pizza-main/pizza-main.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaDoughComponent
+    PizzaMainComponent,
+    KitchenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
