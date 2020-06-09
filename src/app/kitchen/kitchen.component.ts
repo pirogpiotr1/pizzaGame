@@ -1,4 +1,4 @@
-import { Component,OnInit} from '@angular/core';
+import { Component,OnInit, HostListener} from '@angular/core';
 import { KitchenService, doughBalls} from '../kitchen.service';
 import { PizzaMainComponent } from '../pizza-main/pizza-main.component';
 

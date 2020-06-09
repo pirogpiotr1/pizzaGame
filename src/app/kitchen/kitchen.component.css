@@ -1,0 +1,65 @@
+.kitchen-table {
+  border: 1px solid burlywood;
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 1rem;
+  background: burlywood;
+}
+
+.kitchen-table__containers {
+  margin: 1.5rem;
+  padding: 1rem;
+  background: darkolivegreen;
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.kitchen-table__stage {
+  margin: 1.5rem;
+  padding: 1rem;
+  background: brown;
+  width: 20%;
+  height: 100px;
+}
+
+.kitchen-table__container {
+  padding: 1rem;
+  background: grey;
+}
+
+.kitchen-table__container--dough-ball {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kitchen-table .dough-ball {
+  margin: 0.25rem;
+  border-radius: 50%;
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: whitesmoke;
+  display: block;
+}
+
+.kitchen-table .dragged {
+  -webkit-box-shadow: 0 2px 5px 0;
+          box-shadow: 0 2px 5px 0;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  padding: 0 0 2rem 0;
+  color: brown;
+}
+/*# sourceMappingURL=kitchen.component.css.map */

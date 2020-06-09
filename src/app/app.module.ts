@@ -6,13 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PizzaMainComponent } from './pizza-main/pizza-main.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
+import { DragElementsComponent} from './drag-elements/drag-elements.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaMainComponent,
-    KitchenComponent
+    KitchenComponent,
+    DragElementsComponent,
+   
   ],
   imports: [
     BrowserModule,
