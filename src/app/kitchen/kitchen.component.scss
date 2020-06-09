@@ -1,9 +1,39 @@
 .kitchen-table{
+    overflow: hidden;
     margin:auto;
-    height:60vh;
-    width: 60vw;
+    height:80vh;
+    width: 80vw;
     border-radius: 1rem;
     background: burlywood;
+    &__containers{
+        margin: 1.5rem;
+        padding: 1rem ;
+        background: darkolivegreen;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(3 ,1fr) ;
+     
+    }
+    &__container{
+        
+        padding: 1rem;
+        background: grey;
+        &--dough-ball{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .dough-ball{
+        margin: 0.25rem;
+        border-radius: 50%;
+        border: none;;
+        height: 1.5rem;
+        width: 1.5rem;
+        background:whitesmoke;
+        display: block;
+        
+    }
 }
 h1{
     margin: auto;

@@ -1,5 +1,5 @@
 import { Component,OnInit} from '@angular/core';
-import { KitchenService} from '../kitchen.service';
+import { KitchenService, doughBalls} from '../kitchen.service';
 import { PizzaMainComponent } from '../pizza-main/pizza-main.component';
 
 @Component({
@@ -9,19 +9,18 @@ import { PizzaMainComponent } from '../pizza-main/pizza-main.component';
 })
 export class KitchenComponent implements OnInit  {
 
-  pizzaDoughBallsCount:number
+  pizzaDoughBalls:doughBalls;
 
   constructor(private kitchenService:KitchenService) { 
   
   }
 
   getDoughBallsCount():void{
-    this.pizzaDoughBallsCount = this.kitchenService.getUserDoughBalls();
+    this.pizzaDoughBalls = this.kitchenService.getUserDoughBalls();
   }
 
   ngOnInit() {
     this.getDoughBallsCount();
-    console.log(this.pizzaDoughBallsCount);
   }
 
 }
